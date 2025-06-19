@@ -15,3 +15,16 @@
 - Windows Server
 - Windows 10
 <h2>Project Step-By-Step</h2>
+
+<!-- <p>
+  <p>Will start by creating a new VM to install osTicket.</p>
+<img src="https://i.imgur.com/cHfxEnu.png" alt="osTicket"/>
+</p>
+<p>
+  <p>How to set up your VM.</p> 
+<img src="https://i.imgur.com/OsCV4O0.png" alt="osTicket"/>
+</p>
+<p>
+  <p>DON'T FORGET TO CHECK THIS BOX!</p>
+<img src="https://i.imgur.com/fD07nO1.png"  alt="osTicket"/>
+</p> --> 
