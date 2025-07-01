@@ -28,3 +28,39 @@
   <p>Once the resource group and virtual network are created, I’ll create and set up the virtual machine that will serve as our Domain Controller. Be sure to use a Windows Server image.</p>
 <img src="https://i.imgur.com/vgIk9aP.png"  alt="domain controller"/>
 </p> 
+<p>
+  <p></p>
+<img src="https://i.imgur.com/BXA1xet.png" alt="VM"/>
+</p>
+<p>
+  <p></p> 
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src=""  alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p> 
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src=""  alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p> 
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src=""  alt="osTicket Lifecycle"/>
+</p>
