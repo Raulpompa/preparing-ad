@@ -33,12 +33,12 @@
 <img src="https://i.imgur.com/BXA1xet.png" alt="VM"/>
 </p>
 <p>
-  <p></p> 
-<img src="" alt="osTicket Lifecycle"/>
+  <p>In the Networking tab of this VM, I’ll ensure it is created within the virtual network I just set up. I’ll leave all other settings at their defaults and proceed to create the VM.</p> 
+<img src="https://i.imgur.com/LZlWvSA.png" alt="within virtual network"/>
 </p>
 <p>
-  <p></p>
-<img src=""  alt="osTicket Lifecycle"/>
+  <p>Next, I’ll set up a second virtual machine to act as the client. This time, make sure to select a Windows 10 image, rather than the Windows Server image used for the Domain Controller.</p>
+<img src="https://i.imgur.com/GSzaVR6.png"  alt="client vm"/>
 </p>
 <p>
   <p></p>
