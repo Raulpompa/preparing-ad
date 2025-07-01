@@ -21,10 +21,10 @@
 <img src="https://i.imgur.com/31n21R5.png" alt="resource group"/>
 </p>
 <p>
-  <p>How to set up your VM.</p> 
-<img src="https://i.imgur.com/OsCV4O0.png" alt="osTicket"/>
+  <p>Next, create a virtual network as follows.</p> 
+<img src="https://i.imgur.com/OxgNdLg.png" alt="virtual network"/>
 </p>
 <p>
-  <p>DON'T FORGET TO CHECK THIS BOX!</p>
-<img src="https://i.imgur.com/fD07nO1.png"  alt="osTicket"/>
+  <p>Once the resource group and virtual network are created, I’ll create and set up the virtual machine that will serve as our Domain Controller. Be sure to use a Windows Server image.</p>
+<img src="https://i.imgur.com/vgIk9aP.png"  alt="domain controller"/>
 </p> 
