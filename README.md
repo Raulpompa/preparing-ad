@@ -42,7 +42,7 @@
 </p>
 <p>
   <p></p>
-<img src="" alt="osTicket Lifecycle"/>
+<img src="https://i.imgur.com/SyMRidQ.png" alt="client vm"/>
 </p>
 <p>
   <p></p> 
