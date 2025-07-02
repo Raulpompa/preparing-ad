@@ -45,6 +45,42 @@
 <img src="https://i.imgur.com/SyMRidQ.png" alt="client vm"/>
 </p>
 <p>
+  <p>In the Networking tab of this VM, I’ll ensure it’s connected to the same virtual network as the previously created machine. I’ll leave all other settings at their defaults and then create the VM.</p> 
+<img src="https://i.imgur.com/fTdmmcT.png" alt="networking tab c-1 vm"/>
+</p>
+<p>
+  <p>Since the Domain Controller (DC) will also serve as our DNS server, I need to ensure its private IP address doesn’t change. By default, Azure sets the IP to dynamic, but for reliability, I’ll change it to static. This way, when I configure the client to use the DC for DNS, it won't lose connection due to an unexpected IP change. To do this, I’ll access the DC’s network settings and update the IP allocation to static.</p>
+<img src="https://i.imgur.com/SSVc7zF.png"  alt="static IP"/>
+</p>
+<p>
+  <p></p>
+<img src="https://i.imgur.com/GGHe4YF.png" alt="staic IP DC 1"/>
+</p>
+<p>
+  <p>Now, I’ll connect to the Domain Controller via Remote Desktop using its public IP and the username and password I created when configuring the VM.</p> 
+<img src="https://i.imgur.com/lPmsseN.png" alt="connecting to DC-1"/>
+</p>
+<p>
+  <p>After logging in, you should see the Server Manager window by default. If you’re seeing a standard Windows desktop instead, it’s possible you connected to the client VM or chose the wrong image during the Domain Controller setup.</p>
+<img src="https://i.imgur.com/BdpMGF6.png"  alt="server manager window"/>
+</p>
+<p>
+  <p></p>
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p> 
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src=""  alt="osTicket Lifecycle"/>
+</p>
+<p>
+  <p></p>
+<img src="" alt="osTicket Lifecycle"/>
+</p>
+<p>
   <p></p> 
 <img src="" alt="osTicket Lifecycle"/>
 </p>
