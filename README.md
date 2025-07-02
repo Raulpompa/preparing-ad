@@ -3,7 +3,7 @@
 </p>
 
 <h1>Preparing Active Directory</h1>
-<p>When preparing Active Directory (AD), I will create two VMs (Virtual Machines). One of the VMs will run a Windows Server to act as a Domain controller. The second VM will act as a client running Windows 10 to join the domain. In the upcoming projects, I will launch AD and run a script using PowerShell to create users in the domain. From there, I'll be able to log into the client VM and manage the accounts, as well as update group policies. Doing this will create a real-life Active Directory environment.  </p>
+<p>When preparing Active Directory (AD), I will create two VMs (Virtual Machines). One of the VMs will run a Windows Server to act as a Domain controller. The second VM will act as a client running Windows 10 to join the domain. In the upcoming projects, I will launch AD and run a PowerShell script to create users in the domain. From there, I'll be able to log into the client VM and manage the accounts, as well as update group policies. Doing this will create a real-life Active Directory environment.  </p>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -65,38 +65,51 @@
 <img src="https://i.imgur.com/BdpMGF6.png"  alt="server manager window"/>
 </p>
 <p>
-  <p></p>
-<img src="" alt="osTicket Lifecycle"/>
+  <p>For the sake of this lab, I’ll disable the firewall — something you typically wouldn’t do in a production environment. To begin, I’ll right-click the Start button, open the Run dialog, and enter wf.msc to access the firewall settings.</p>
+<img src="https://i.imgur.com/AelS2Mg.png" alt="disable firewall"/>
 </p>
 <p>
-  <p></p> 
-<img src="" alt="osTicket Lifecycle"/>
-</p>
-<p>
-  <p></p>
-<img src=""  alt="osTicket Lifecycle"/>
+  <p>Open Windows Defender Firewall Properties, and under each tab — Domain Profile, Private Profile, and Public Profile — switch the firewall setting to Off</p> 
+<img src="https://i.imgur.com/1GdnpiB.png" alt="disable firewall"/>
 </p>
 <p>
   <p></p>
-<img src="" alt="osTicket Lifecycle"/>
-</p>
-<p>
-  <p></p> 
-<img src="" alt="osTicket Lifecycle"/>
+<img src="https://i.imgur.com/VqZCNCx.png"  alt="firewall defender"/>
 </p>
 <p>
   <p></p>
-<img src=""  alt="osTicket Lifecycle"/>
+<img src="https://i.imgur.com/PW3VFWW.png" alt="firewall defender"/>
 </p>
 <p>
-  <p></p>
-<img src="" alt="osTicket Lifecycle"/>
+  <p>At this point, all firewall settings should appear as disabled.</p> 
+<img src="https://i.imgur.com/ABBdJS6.png" alt="disabled firewall"/>
 </p>
 <p>
-  <p></p> 
-<img src="" alt="osTicket Lifecycle"/>
+  <p>Now, I’ll set the client’s DNS to use the Domain Controller. First, I’ll go back to Azure and copy the private IP address of the DC.</p>
+<img src="https://i.imgur.com/1NfaFCI.png"  alt="clients DNS to DC-1"/>
 </p>
 <p>
-  <p></p>
-<img src=""  alt="osTicket Lifecycle"/>
+  <p>Next, I’ll access the client VM’s network settings. I’ll select its NIC, go to the DNS Servers section under Settings, and change the configuration from Inherit from virtual network to Custom. Then, I’ll input the Domain Controller’s private IP address and save.</p>
+<img src="https://i.imgur.com/s4EkJPx.png" alt="input DC-1's private IP into client-1"/>
 </p>
+<p>
+  <p>Once the settings are saved, I’ll reboot the client VM to apply the new DNS configuration.</p> 
+<img src="https://i.imgur.com/vkhp8fV.png" alt="restart VM"/>
+</p>
+<p>
+  <p>After the reboot, I’ll connect to the client VM via Remote Desktop, using its public IP and the username and password I established when setting it up.</p>
+<img src="https://i.imgur.com/Jrm1mHM.png"  alt="RDP connect client"/>
+</p>
+<p>
+  <p>After logging in, I’ll launch PowerShell and use the ping command with the Domain Controller’s private IP to test connectivity. If the ping fails with a timeout error, verify that both VMs are connected to the same virtual network in Azure. If they aren’t, you’ll need to recreate the machines on the same network to resolve the issue.</p>
+<img src="https://i.imgur.com/hzp66Nm.png" alt="ping dc-1 and verify both vm's are connected"/>
+</p>
+<p>
+  <p>While connected, I’ll verify that the DNS configuration points to the Domain Controller by running ipconfig /all and checking the DNS Servers section. If configured properly, it will show the DC’s IP address.</p> 
+<img src="https://i.imgur.com/rHjjW9B.png" alt="verify DNS configuration"/>
+</p>
+<p>
+  <h2>The Active Directory infrastructure has been successfully set up!</h2>
+  <p>Two virtual machines have been set up successfully: a Windows Server VM acting as the Domain Controller, and a Windows 10 VM serving as the client.
+
+In upcoming projects, I’ll deploy Active Directory, automate user creation with scripts, enable client VM logins, and manage user accounts and group policies — all to replicate a real-world IT environment.</p>
